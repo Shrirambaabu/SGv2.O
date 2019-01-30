@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "730106733860",
+    "firebase_url": "https://shreyaghoshalv2.firebaseio.com",
+    "project_id": "shreyaghoshalv2",
+    "storage_bucket": "shreyaghoshalv2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730106733860:android:221d9415ecc11042",
+        "android_client_info": {
+          "package_name": "com.shreyaghoshal.twopointo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730106733860-63bfu69f659l85sgiugrpc0mo0klliuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwrOXYj1deknz0REqEA19-uZxXqQXA--w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
