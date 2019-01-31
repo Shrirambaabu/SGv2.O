@@ -19,9 +19,34 @@
     <style name="AppTheme.FullScreenWindow">
         <item name="windowActionBar">true</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
         <item name="android:windowBackground">@android:color/white</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+
+    <style name="ThemeOverlay.MyApp.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <!-- Parent theme sets colorControlNormal to textColorPrimary. -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+
+    </style>
+
+
+    <style name="FullscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:typeface">serif</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="colorPrimary">@color/c1</item>
+        <item name="colorPrimaryDark">@color/c1</item>
+        <item name="colorAccent">@color/c1</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionModeBackground">@color/c1</item>
+        <item name="actionModeBackground">@color/c1</item>
+        <!--
+                <item name="android:windowTranslucentStatus">true</item>
+                <item name="android:windowTranslucentNavigation">true</item>-->
     </style>
 
 

@@ -12,8 +12,11 @@
         android:roundIcon="@drawable/app_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.dashboard.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme"></activity>
         <activity
-            android:name=".ui.activity.mainactivity.MainActivity"
+            android:name=".ui.activity.splashscreen.SplashScreenActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.FullScreenWindow">
             <intent-filter>
@@ -21,7 +24,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
         <service android:name=".service.MyFirebaseMessagingService">

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/ic_feed"
+        android:icon="@drawable/ic_feed_icon"
+        android:title="Feeds"/>
+    <item android:id="@+id/ic_membership"
+        android:icon="@drawable/ic_feed_icon"
+        android:title="Memberships"/>
+    <item
+        android:id="@+id/ic_profile"
+        android:icon="@drawable/ic_feed_icon"
+        android:title="Profile" />
+</menu>
