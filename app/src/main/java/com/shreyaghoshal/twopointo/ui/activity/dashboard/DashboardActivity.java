@@ -1,6 +1,7 @@
 package com.shreyaghoshal.twopointo.ui.activity.dashboard;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
@@ -11,6 +12,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -158,6 +160,40 @@ public class DashboardActivity extends AppCompatActivity implements DashboardCon
     }
 
 
+
+    @Override
+    public void onBackPressed() {
+
+        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
+            mDrawerLayout.closeDrawer(GravityCompat.START);
+        } else if (backState == 1) {
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setIcon(R.drawable.app_logo).setTitle("Exit");
+            builder.setMessage("Are you sure you want to Exit?");
+            builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    finishAffinity();
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                }
+
+            });
+            builder.setNegativeButton("No", null);
+            //builder.show();
+            AlertDialog dialog = builder.create();
+            dialog.show(); //Only after .show() was called
+            dialog.getButton(dialog.BUTTON_NEGATIVE).setTextColor(getResources().getColor(R.color.c1));
+            dialog.getButton(dialog.BUTTON_POSITIVE).setTextColor(getResources().getColor(R.color.c1));
+
+
+        } else {
+
+            displaySelectedItem(R.id.ic_feed);
+            backState = 1;
+        }
+
+    }
 
     private void loadFragment(Fragment fragment) {
         // load fragment

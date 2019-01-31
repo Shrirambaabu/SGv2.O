@@ -19,8 +19,6 @@ public class SplashScreenActivity extends AppCompatActivity {
         Log.e("FCM:", "" + PreferenceAppHelper.getFcmToken());
 
         new Handler().postDelayed(new Runnable() {
-
-
             @Override
             public void run() {
 
