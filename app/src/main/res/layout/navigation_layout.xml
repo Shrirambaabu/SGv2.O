@@ -12,8 +12,20 @@
         <RelativeLayout
             android:id="@+id/color_bg"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@color/c1">
+            android:layout_height="200dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/c1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#88000000">
+
+            </RelativeLayout>
 
 
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -76,6 +88,7 @@
                         android:layout_alignParentBottom="true"
                         android:background="@color/grey" />
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:id="@+id/text_two_layout"
                     android:layout_width="match_parent"
